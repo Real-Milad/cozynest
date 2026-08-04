@@ -13,10 +13,10 @@ export const App = () => {
     <div>
       <Header />
       <Hero />
-      {/* <Products /> */}
-      {/* <Categories /> */}
-      {/* <Blog /> */}
-      {/* <Arival /> */}
+      <Products />
+      <Categories />
+      <Blog />
+      <Arival />
     </div>
   )
 }
