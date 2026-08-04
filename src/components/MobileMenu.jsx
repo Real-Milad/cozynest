@@ -9,8 +9,6 @@ export const MobileMenu = ({toggleMenu, setToggleMenu}) => {
   const [expandShop, setExpandShop] = useState(false)
 
   
-
-
   return (
     <div className={`
       fixed top-0 left-0 w-80 h-screen z-3 pt-25 flex items-center flex-col 
