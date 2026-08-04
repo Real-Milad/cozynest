@@ -7,6 +7,19 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 export const Header = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false)
+    const [scroll, setScroll] = useState(false);
+
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 50) {
+        setScroll(true) 
+      } else {
+        setScroll(false)
+      }
+    });
+  }, [scroll])
   
 
   useEffect(() => {
@@ -15,7 +28,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="fixed w-full flex justify-between items-center py-6 px-4 md:py-7 md:px-8 z-2 bg-[#694129] lg:bg-transparent">
+      <div className={`${scroll ? "bg-[#694129]  shadow-lg" : "bg-transparent"} fixed w-full flex justify-between duration-500 items-center py-6 px-4 md:py-7 md:px-8 z-2`}>
         <div className="flex-1">
           <a href="#"><img src={logoLight} alt="cozynest" className="w-35 md:w-45"/></a>
         </div>
