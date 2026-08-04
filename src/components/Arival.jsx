@@ -106,6 +106,8 @@ export const Arival = () => {
             </div>
           </li>
 
+
+
           <li className="off-card">
             <div className="bg-[#4f3120db] text-white max-w-max ms-auto px-4 py-5 rounded-md relative z-10 md:px-5 md:py-6">
               <div className="flex  justify-center items-center gap-3 mb-5 md:mb-9">
